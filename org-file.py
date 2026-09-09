@@ -5,9 +5,8 @@ def logError(fileName, path):
 
 def logMoving(fileName, path):
     print(f"The file {fileName} has moved in {path}") 
-
-
-downloadPath = "C:\\Users\\User\\Downloads"
+home_dir = os.path.expanduser("~")
+downloadPath = os.path.join(home_dir, "Downloads")
 imagesPath = os.path.join(downloadPath, "Images")
 docPath = os.path.join(downloadPath, "Documents")
 archivePath = os.path.join(downloadPath, "Archives")
